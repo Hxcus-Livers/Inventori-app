@@ -193,4 +193,8 @@
                 console.error('Error getting permission:', error);
             });
     </script>
+<<<<<<< HEAD
 @endsection
+=======
+@endsection
+>>>>>>> 6cdff83df70f20baecea80b76b78909559561b91
