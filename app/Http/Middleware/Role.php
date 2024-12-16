@@ -16,7 +16,7 @@ class Role
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::check() && Auth::user()->Usertype === 'admin') {
+        if (Auth::check() && Auth::user()->role === 'admin') {
             return $next($request);
         }
         abort(403, 'Unauthorized action.');
